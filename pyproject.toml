@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "rag-testing"
+version = "0.1.0"
+description = ""
+authors = ["Stephanie Westrum <greensirus@gmail.com>"]
+readme = "README.md"
+packages = [{include = "rag_testing"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+ollama = "^0.3.1"
+qdrant-client = {extras = ["fastembed"], version = "^1.11.0"}
+tqdm = "^4.66.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
